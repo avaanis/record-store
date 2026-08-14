@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AYESHA EROTICA™ — RECORD STORE</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;600;700&display=swap');
+
+:root {
+    --pink: #ff1493;
+    --hotpink: #ff008c;
+    --lightpink: #ffb6e6;
+    --baby: #ffd9f3;
+    --white: #fffaff;
+    --black: #160012;
+    --chrome: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #cfcfcf 18%,
+        #ffffff 35%,
+        #8e8e8e 48%,
+        #ffffff 63%,
+        #bdbdbd 80%,
+        #ffffff 100%
+    );
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background:
+        radial-gradient(circle at 20% 10%, #fff 0 1px, transparent 2px),
+        radial-gradient(circle at 80% 30%, #fff 0 1px, transparent 2px),
+        linear-gradient(135deg, #ff73c7, #ff009d 45%, #a90068);
+    background-size: 45px 45px, 70px 70px, 100% 100%;
+    color: var(--black);
+    font-family: "Space Grotesk", sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.topbar {
+    height: 34px;
+    background: #111;
+    color: #ff8dd7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid white;
+}
+
+.blink {
+    animation: blink 1s steps(2) infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* =========================
+   MAIN WINDOW
+========================= */
+
+.site-window {
+    width: min(1200px, 94%);
+    margin: 24px auto 60px;
+    background: rgba(255, 211, 241, .94);
+    border: 3px solid white;
+    box-shadow:
+        0 0 0 3px #ff008c,
+        0 20px 70px rgba(60, 0, 40, .5);
+}
+
+/* fake Windows title bar */
+
+.window-header {
+    background: var(--chrome);
+    border-bottom: 3px solid #222;
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "DM Mono", monospace;
+    font-size: 11px;
+}
+
+.window-buttons {
+    display: flex;
+    gap: 4px;
+}
+
+.window-buttons span {
+    width: 16px;
+    height: 16px;
+    background: #ff1493;
+    color: white;
+    border: 1px solid #111;
+    display: grid;
+    place-items: center;
+    font-size: 10px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+    padding: 55px 20px 35px;
+    background:
+        radial-gradient(circle, rgba(255,255,255,.7), transparent 30%),
+        linear-gradient(135deg, #ffb3e5, #ff159b);
+    border-bottom: 3px solid #111;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero:before {
+    content: "✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-size: 22px;
+    letter-spacing: 15px;
+    opacity: .7;
+}
+
+.logo {
+    font-family: "Archivo Black", sans-serif;
+    font-size: clamp(42px, 8vw, 100px);
+    line-height: .8;
+    color: white;
+    text-shadow:
+        3px 3px 0 #ff008c,
+        6px 6px 0 #a50064,
+        0 0 20px white;
+    transform: skew(-5deg);
+    margin: 25px 0;
+}
+
+.subtitle {
+    font-family: "DM Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    background: #111;
+    color: #ff9bdd;
+    display: inline-block;
+    padding: 7px 13px;
+    border: 2px solid white;
+}
+
+.hero p {
+    max-width: 550px;
+    margin: 20px auto 0;
+    font-size: 14px;
+}
+
+/* =========================
+   NAV
+========================= */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 14px;
+    background: #ff78c8;
+    border-bottom: 3px solid #111;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    background: #111;
+    border: 2px solid white;
+    padding: 8px 16px;
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    box-shadow: 3px 3px 0 #ff008c;
+    transition: .15s;
+}
+
+.nav a:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 #ff008c;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+    padding: 35px 25px;
+    background:
+        linear-gradient(rgba(255,255,255,.35) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.35) 1px, transparent 1px),
+        #ff9edb;
+    background-size: 20px 20px;
+}
+
+.section-title {
+    font-family: "Archivo Black", sans-serif;
+    font-size: clamp(30px, 5vw, 55px);
+    color: white;
+    text-shadow: 3px 3px #ff008c;
+    margin: 0 0 8px;
+}
+
+.section-intro {
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    margin-bottom: 35px;
+}
+
+/* =========================
+   RECORD GRID
+========================= */
+
+.record-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.record {
+    position: relative;
+    min-height: 300px;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.cd {
+    width: min(240px, 80vw);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: auto;
+    background:
+        repeating-radial-gradient(
+            circle,
+            #222 0px,
+            #333 2px,
+            #111 4px,
+            #444 5px
+        );
+    border: 8px solid #111;
+    box-shadow:
+        0 12px 15px rgba(80,0,50,.4),
+        inset 0 0 30px #000;
+    position: relative;
+    transition: transform .5s cubic-bezier(.2,.8,.2,1);
+}
+
+.record:hover .cd {
+    transform: translateY(-18px) rotate(12deg) scale(1.05);
+}
+
+.cd:before {
+    content: "";
+    position: absolute;
+    inset: 25%;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle,
+            #fff 0 3%,
+            #111 4% 6%,
+            var(--pink) 7% 60%,
+            #ff8bd5 61% 100%
+        );
+    border: 4px solid #111;
+}
+
+.cd:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 3px solid #111;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.record-number {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: #fff;
+    border: 2px solid #111;
+    padding: 5px 8px;
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    z-index: 3;
+}
+
+.record-label {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.record-label h3 {
+    margin: 0;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 17px;
+}
+
+.record-label p {
+    margin: 5px 0;
+    font-family: "DM Mono", monospace;
+    font-size: 9px;
+}
+
+/* =========================
+   PLAYER
+========================= */
+
+.player {
+    margin: 25px;
+    background: #111;
+    color: #ff94d6;
+    border: 3px solid white;
+    box-shadow: 7px 7px 0 #ff008c;
+    padding: 12px;
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+}
+
+.player-inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.equalizer {
+    display: flex;
+    gap: 3px;
+    height: 22px;
+    align-items: flex-end;
+}
+
+.equalizer span {
+    display: block;
+    width: 4px;
+    background: #ff1493;
+    animation: eq .7s infinite alternate;
+}
+
+.equalizer span:nth-child(2) { animation-delay: .2s; }
+.equalizer span:nth-child(3) { animation-delay: .4s; }
+.equalizer span:nth-child(4) { animation-delay: .1s; }
+
+@keyframes eq {
+    from { height: 4px; }
+    to { height: 22px; }
+}
+
+/* =========================
+   MODAL / RECORD OPEN
+========================= */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(25,0,18,.75);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal.active {
+    display: flex;
+    animation: fadeIn .2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-card {
+    width: min(700px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #ffd9f1;
+    border: 4px solid white;
+    box-shadow:
+        0 0 0 4px #ff008c,
+        15px 15px 0 #111,
+        0 0 70px #ff00a6;
+    animation: openRecord .45s cubic-bezier(.2,.8,.2,1);
+}
+
+@keyframes openRecord {
+    from {
+        transform: translateY(100px) rotate(8deg) scale(.7);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0) rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    background: var(--chrome);
+    border-bottom: 3px solid #111;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+}
+
+.close {
+    cursor: pointer;
+    background: #ff008c;
+    color: white;
+    border: 2px solid #111;
+    padding: 2px 7px;
+    font-weight: bold;
+}
+
+.modal-content {
+    padding: 35px;
+}
+
+.modal-content .big-number {
+    font-family: "Archivo Black";
+    color: #ff008c;
+    font-size: 65px;
+    line-height: 1;
+}
+
+.modal-content h2 {
+    font-family: "Archivo Black";
+    font-size: clamp(30px, 6vw, 55px);
+    color: #111;
+    margin: 10px 0 25px;
+}
+
+.info-box {
+    border: 2px solid #111;
+    background: rgba(255,255,255,.55);
+    padding: 15px;
+    margin: 12px 0;
+}
+
+.info-box strong {
+    display: block;
+    color: #ff008c;
+    font-family: "DM Mono", monospace;
+    font-size: 9px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.info-box p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.play-button {
+    display: inline-block;
+    margin-top: 15px;
+    background: #111;
+    color: #ff8bd5;
+    padding: 13px 20px;
+    border: 2px solid white;
+    box-shadow: 4px 4px #ff008c;
+    text-decoration: none;
+    font-family: "DM Mono", monospace;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    transform: translate(2px,2px);
+    box-shadow: 2px 2px #ff008c;
+}
+
+/* =========================
+   B SIDES
+========================= */
+
+.b-sides {
+    background: #111;
+    color: white;
+    padding: 40px 25px;
+}
+
+.b-sides .section-title {
+    color: #ff8bd5;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+}
+
+.product {
+    background: var(--chrome);
+    color: #111;
+    border: 3px solid white;
+    padding: 18px;
+    box-shadow: 6px 6px #ff008c;
+    transition: .2s;
+}
+
+.product:hover {
+    transform: rotate(-2deg) translateY(-5px);
+}
+
+.product-image {
+    height: 160px;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(circle at 40% 40%, white, transparent 5%),
+        linear-gradient(135deg,#ff8bd5,#ff008c);
+    border: 2px solid #111;
+    margin-bottom: 15px;
+    font-size: 60px;
+}
+
+.product h3 {
+    font-family: "Archivo Black", sans-serif;
+    margin: 0 0 8px;
+}
+
+.product p {
+    font-family: "DM Mono", monospace;
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #ff008c;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-family: "DM Mono", monospace;
+    font-size: 9px;
+    border-top: 3px solid white;
+}
+
+/* =========================
+   SPARKLES
+========================= */
+
+.sparkle {
+    position: fixed;
+    pointer-events: none;
+    color: white;
+    font-size: 15px;
+    z-index: 9999;
+    animation: sparkle .7s forwards;
+}
+
+@keyframes sparkle {
+    from {
+        transform: scale(.5) rotate(0);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.8) rotate(90deg) translateY(-20px);
+        opacity: 0;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+    .record-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .modal-content {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 520px) {
+    .record-grid,
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .site-window {
+        width: 96%;
+        margin-top: 10px;
+    }
+
+    .hero {
+        padding-top: 45px;
+    }
+
+    .cd {
+        width: 210px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP COMPUTER BAR -->
+<div class="topbar">
+    <span>AYESHA EROTICA™ RECORDS</span>
+    <span class="blink">● SYSTEM ONLINE</span>
+</div>
+
+<div class="site-window">
+
+    <!-- FAKE WINDOW -->
+    <div class="window-header">
+        <span>💿 AYESHA_EROTICA.exe</span>
+
+        <div class="window-buttons">
+            <span>_</span>
+            <span>□</span>
+            <span>×</span>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="logo">
+            AYESHA<br>EROTICA
+        </div>
+
+        <div class="subtitle">
+            OFFICIAL UNOFFICIAL DIGITAL RECORD STORE™
+        </div>
+
+        <p>
+            nine records. nine memories.
+            absolutely no emotional stability.
+        </p>
+    </header>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <a href="#records">RECORDS</a>
+        <a href="#bsides">JEWELRY</a>
+        <a href="#bsides">BEAUTY</a>
+        <a href="#archive">ARCHIVE</a>
+    </nav>
+
+    <!-- PLAYER -->
+    <div class="player">
+        <div class="player-inner">
+
+            <div class="equalizer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div>
+                NOW PLAYING:
+                <strong>AYESHA'S PERSONAL SOUNDTRACK</strong>
+            </div>
+
+            <div style="margin-left:auto;">
+                00:00 ━━━━━━━ 03:42
+            </div>
+
+        </div>
+    </div>
+
+    <!-- RECORDS -->
+    <section class="section" id="records">
+
+        <h2 class="section-title">
+            THE RECORDS
+        </h2>
+
+        <div class="section-intro">
+            // CLICK A RECORD TO ACCESS ITS CONTENTS
+        </div>
+
+        <div class="record-grid">
+
+            <!-- RECORD 01 -->
+            <div class="record" onclick="openRecord(1)">
+                <div class="record-number">01</div>
+
+                <div class="cd"></div>
+
+                <div class="record-label">
+                    <h3>THE FAVOURITE</h3>
+                    <p>HER SONG // OBSESSED</p>
+                </div>
+            </div>
+
+            <!-- RECORD 02 -->
+            <div class="record" onclick="openRecord(2)">
+                <div class="record-number">02</div>
+                <div class="cd"></div>
+
+                <div class="record-label">
+                    <h3>THE MEMORY</h3>
+                    <p>VISUAL ARCHIVE</p>
+                </div>
+            </div>
+
+            <!-- RECORD 03 -->
+            <div class="record" onclick="openRecord(3)">
+                <div class="record-number">03</div>
+                <div class="cd"></div>
+
+                <div class="record-label">
+                    <h3>INSIDE JOKE</h3>
+                    <p>CLASSIFIED MATERIAL</p>
+                </div>
+            </div>
+
+            <!-- RECORD 04 -->
+            <div class="record" onclick="openRecord(4)">
+                <div class="record-number">04</div>
+                <div class="cd"></div>
+
+                <div class="record-label">
+                    <h3>THE LOOK</h3>
+                    <p>FASHION DEPARTMENT</p>
+                </div>
+            </div>
+
+            <!-- RECORD 05 -->
+            <div class="record" onclick="openRecord(5)">
+                <div class="record-number">05</div>
+                <div class="cd"></div>
+
+                <div class="record-label">
+                    <h3>TESTIMONIALS</h3>
+                    <p>FROM THE PEOPLE</p>
+                </div>
+            </div>
+
+            <!-- RECORD 06 -->
+            <div class="record" onclick="openRecord(6)">
+                <div class="record-number">06</div>
+                <div class="cd"></div>
+
+                <div class="record-label">
+                    <h3>EMERGENCY</h3>
+                    <p>DO NOT INSERT SANE PEOPLE</p>
+                </div>
+            </div>
+
+            <!-- RECORD 07 -->
+            <div class="record" onclick="openRecord(7)">
+                <div class="record-number">07</div>
+                <div class="cd"></div>
+
+                <div class="record-label">
+                    <h3>THE LETTER</h3>
+                    <p>PRIVATE CORRESPONDENCE</p>
+                </div>
+            </div>
+
+            <!-- RECORD 08 -->
+            <div class="record" onclick="openRecord(8)">
+                <div class="record-number">08</div>
+                <div class="cd"></div>
+
+                <div class="record-label">
+                    <h3>THE PROPHECY</h3>
+                    <p>FUTURE ARCHIVE</p>
+                </div>
+            </div>
+
+            <!-- RECORD 09 -->
+            <div class="record" onclick="openRecord(9)">
+                <div class="record-number">09</div>
+                <div class="cd"></div>
+
+                <div class="record-label">
+                    <h3>FINAL TRACK</h3>
+                    <p>PLAY AT MAXIMUM VOLUME</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- B SIDES -->
+    <section class="b-sides" id="bsides">
+
+        <h2 class="section-title">
+            💎 THE B-SIDES
+        </h2>
+
+        <div class="section-intro">
+            // LIMITED EDITION AYESHA MERCHANDISE
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product">
+                <div class="product-image">💎</div>
+                <h3>THE AYESHA NECKLACE</h3>
+                <p>
+                    HANDMADE // 2026<br>
+                    1 OF 1<br><br>
+                    PRICE: PRICELESS<br>
+                    AVAILABILITY: UNFORTUNATELY SOLD
+                </p>
+            </div>
+
+            <div class="product">
+                <div class="product-image">💄</div>
+                <h3>EMOTIONAL DAMAGE™</h3>
+                <p>
+                    LIMITED EDITION LIP GLOSS<br>
+                    SHADE: "I'M FINE"<br><br>
+                    FINISH: EXTREMELY SHINY
+                </p>
+            </div>
+
+            <div class="product">
+                <div class="product-image">👜</div>
+                <h3>THE HANDBAG</h3>
+                <p>
+                    LUXURY ACCESSORY<br>
+                    CONTENTS: UNKNOWN<br><br>
+                    CAPACITY: ONE PHONE + SEVENTEEN SECRETS
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer id="archive">
+        AYESHA EROTICA™ // EST. 2026 // MADE WITH QUESTIONABLE AMOUNTS OF LOVE
+        <br><br>
+        BEST VIEWED WITH GLITTER ON
+    </footer>
+
+</div>
+
+
+<!-- MODAL -->
+<div class="modal" id="recordModal">
+
+    <div class="modal-card">
+
+        <div class="modal-header">
+            <span>AYESHA_EROTICA / RECORD_ACCESS</span>
+            <button class="close" onclick="closeRecord()">X</button>
+        </div>
+
+        <div class="modal-content">
+
+            <div class="big-number" id="modalNumber">
+                01
+            </div>
+
+            <h2 id="modalTitle">
+                THE FAVOURITE
+            </h2>
+
+            <div id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* =========================================
+   RECORD CONTENT
+   EDIT EVERYTHING BELOW
+========================================= */
+
+const records = {
+
+    1: {
+        title: "THE FAVOURITE",
+
+        body: `
+            <div class="info-box">
+                <strong>TRACK</strong>
+                <p>PUT HER FAVOURITE SONG HERE</p>
+            </div>
+
+            <div class="info-box">
+                <strong>ARTIST</strong>
+                <p>ARTIST NAME</p>
+            </div>
+
+            <div class="info-box">
+                <strong>STATUS</strong>
+                <p>OBSESSED. OBVIOUSLY.</p>
+            </div>
+
+            <div class="info-box">
+                <strong>ASSOCIATED MEMORY</strong>
+                <p>
+                    Write your little personal note here.
+                    Something that sounds like you talking directly
+                    to her rather than a generic birthday message.
+                </p>
+            </div>
+
+            <a class="play-button"
+               href="https://open.spotify.com/"
+               target="_blank">
+               ▶ PLAY ON SPOTIFY
+            </a>
+        `
+    },
+
+    2: {
+        title: "THE MEMORY",
+
+        body: `
+            <div class="info-box">
+                <strong>THE MEMORY INSIDE</strong>
+
+                <p>
+                    This record contains photographic evidence
+                    of a moment that should probably never have
+                    been documented.
+                </p>
+
+                <br>
+
+                <div style="
+                    height:260px;
+                    background:linear-gradient(135deg,#ff1493,#111);
+                    display:grid;
+                    place-items:center;
+                    color:white;
+                    font-size:50px;
+                    border:3px solid #111;
+                ">
+                    📸
+                </div>
+            </div>
+
+            <div class="info-box">
+                <strong>ARCHIVE NOTE</strong>
+                <p>
+                    Replace the placeholder above with an actual
+                    photograph of you two.
+                </p>
+            </div>
+        `
+    },
+
+    3: {
+        title: "CLASSIFIED INSIDE JOKE",
+
+        body: `
+            <div class="info-box">
+                <strong>TOP SECRET</strong>
+
+                <p style="
+                    font-family:'Archivo Black';
+                    font-size:30px;
+                    color:#ff008c;
+                ">
+                    INSERT YOUR INSIDE JOKE HERE.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <strong>CONTEXT</strong>
+
+                <p>
+                    Explain absolutely nothing.
+                    The less context this has, the funnier it is.
+                </p>
+            </div>
+        `
+    },
+
+    4: {
+        title: "IF THIS SONG WERE AN OUTFIT",
+
+        body: `
+            <div class="info-box">
+
+                <strong>THE LOOK</strong>
+
+                <p>
+                    rhinestone top<br>
+                    silver jewelry<br>
+                    tiny skirt<br>
+                    obnoxious sunglasses<br>
+                    $900 handbag that contains absolutely nothing
+                </p>
+
+            </div>
+
+            <div class="info-box">
+                <strong>ACCESSORIES</strong>
+
+                <p>
+                    lip gloss • tiny sunglasses • excessive rings
+                    • perfume that arrives in the room before she does
+                </p>
+            </div>
+
+            <div class="info-box">
+                <strong>RATING</strong>
+
+                <p style="
+                    font-size:30px;
+                    color:#ff008c;
+                ">
+                    ★★★★★
+                </p>
+            </div>
+        `
+    },
+
+    5: {
+        title: "THE TESTIMONIALS",
+
+        body: `
+            <div class="info-box">
+                <strong>FROM THE PEOPLE</strong>
+
+                <p>
+                    "Insert sentence from mutual friend #1."
+                </p>
+            </div>
+
+            <div class="info-box">
+                <strong>FROM THE PEOPLE</strong>
+
+                <p>
+                    "Insert sentence from mutual friend #2."
+                </p>
+            </div>
+
+            <div class="info-box">
+                <strong>FROM THE PEOPLE</strong>
+
+                <p>
+                    "Insert sentence from mutual friend #3."
+                </p>
+            </div>
+        `
+    },
+
+    6: {
+        title: "AYESHA EROTICA EMERGENCY™",
+
+        body: `
+            <div style="
+                background:#ff008c;
+                color:white;
+                padding:25px;
+                border:4px solid #111;
+                text-align:center;
+                margin-bottom:20px;
+            ">
+
+                <div style="
+                    font-family:'Archivo Black';
+                    font-size:clamp(25px,6vw,55px);
+                ">
+                    ⚠ WARNING ⚠
+                </div>
+
+                <br>
+
+                <div style="
+                    font-family:'DM Mono';
+                    font-size:12px;
+                ">
+                    THIS RECORD CONTAINS EXCESSIVE
+                    AMOUNTS OF CUNT.
+                </div>
+
+            </div>
+
+            <div class="info-box">
+                <strong>CURRENT STATUS</strong>
+                <p>emotionally compromised</p>
+            </div>
+
+            <div class="info-box">
+                <strong>LISTENING CONTEXT</strong>
+                <p>
+                    packing a suitcase and becoming
+                    progressively more dramatic
+                </p>
+            </div>
+
+            <a class="play-button"
+               href="https://open.spotify.com/"
+               target="_blank">
+               ▶ ACTIVATE EMERGENCY PLAYLIST
+            </a>
+        `
+    },
+
+    7: {
+        title: "THE LETTER",
+
+        body: `
+            <div class="info-box">
+
+                <strong>PRIVATE CORRESPONDENCE</strong>
+
+                <p style="
+                    font-family:Georgia,serif;
+                    font-size:18px;
+                    line-height:1.8;
+                ">
+                    Dear Ayesha,<br><br>
+
+                    Write the actual heartfelt bit here.
+
+                    This is the record where you stop being
+                    ridiculous for approximately three minutes
+                    and tell her what she actually means to you.
+
+                    <br><br>
+
+                    Love,<br>
+                    [YOUR NAME]
+                </p>
+
+            </div>
+        `
+    },
+
+    8: {
+        title: "THE PROPHECY",
+
+        body: `
+            <div class="info-box">
+                <strong>YEAR 2036</strong>
+
+                <p>
+                    Ayesha is still overdressed.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <strong>FUTURE PREDICTION #02</strong>
+
+                <p>
+                    She still says "I literally cannot"
+                    at least four times a week.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <strong>FUTURE PREDICTION #03</strong>
+
+                <p>
+                    Somehow the sunglasses have become
+                    even more obnoxious.
+                </p>
+            </div>
+        `
+    },
+
+    9: {
+        title: "FINAL TRACK",
+
+        body: `
+            <div class="info-box">
+
+                <strong>TRACK</strong>
+
+                <p>
+                    THE SONG THAT SHOULD PLAY OVER
+                    THE END CREDITS OF HER LIFE.
+                </p>
+
+            </div>
+
+            <div class="info-box">
+
+                <strong>HER RATING</strong>
+
+                <p style="
+                    font-size:40px;
+                    color:#ff008c;
+                ">
+                    10/10
+                </p>
+
+            </div>
+
+            <div class="info-box">
+
+                <strong>FINAL MESSAGE</strong>
+
+                <p style="
+                    font-family:'Archivo Black';
+                    font-size:22px;
+                ">
+                    HAPPY BIRTHDAY, YOU ABSOLUTE ICON.
+                </p>
+
+            </div>
+
+            <a class="play-button"
+               href="https://open.spotify.com/"
+               target="_blank">
+               ▶ PLAY THE FINAL TRACK
+            </a>
+        `
+    }
+
+};
+
+
+/* =========================================
+   OPEN RECORD
+========================================= */
+
+function openRecord(number) {
+
+    const record = records[number];
+
+    document.getElementById("modalNumber").innerText =
+        String(number).padStart(2, "0");
+
+    document.getElementById("modalTitle").innerText =
+        record.title;
+
+    document.getElementById("modalBody").innerHTML =
+        record.body;
+
+    document.getElementById("recordModal")
+        .classList.add("active");
+
+    document.body.style.overflow = "hidden";
+}
+
+
+/* =========================================
+   CLOSE RECORD
+========================================= */
+
+function closeRecord() {
+
+    document.getElementById("recordModal")
+        .classList.remove("active");
+
+    document.body.style.overflow = "";
+}
+
+
+/* Close if clicking outside */
+
+document.getElementById("recordModal")
+    .addEventListener("click", function(e) {
+
+        if (e.target === this) {
+            closeRecord();
+        }
+
+    });
+
+
+/* Escape key */
+
+document.addEventListener("keydown", function(e) {
+
+    if (e.key === "Escape") {
+        closeRecord();
+    }
+
+});
+
+
+/* =========================================
+   Y2K CURSOR SPARKLES
+========================================= */
+
+document.addEventListener("mousemove", function(e) {
+
+    if (Math.random() > .82) {
+
+        const sparkle = document.createElement("div");
+
+        sparkle.className = "sparkle";
+
+        sparkle.innerHTML =
+            Math.random() > .5 ? "✦" : "✧";
+
+        sparkle.style.left = e.clientX + "px";
+        sparkle.style.top = e.clientY + "px";
+
+        document.body.appendChild(sparkle);
+
+        setTimeout(() => {
+            sparkle.remove();
+        }, 700);
+    }
+
+});
+
+</script>
+
+</body>
+</html>
